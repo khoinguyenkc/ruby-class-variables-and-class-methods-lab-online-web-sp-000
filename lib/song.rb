@@ -39,7 +39,7 @@ def self.genres #CLASS method
   uniquegenreslist
 end
 
-def self.genre_count
+def self.genre_count #CLASS method
  tally = {}
  @@genres.each do | genre |
    if !tally.keys.include?(genre)
@@ -51,7 +51,7 @@ def self.genre_count
  tally
 end
 
-def self.artist_count
+def self.artist_count #CLASS method
   tally = {}
   @@artists.each do | artist |
     if !tally.keys.include?(artist)
