@@ -28,7 +28,14 @@ def artists
 end
 
 def genres
-  @@genres
+  uniquegenreslist = []
+  @@genres.each do | genre |
+    if !uniquegenreslist.include?(genre) #aka if doesn't include already
+      uniquegenreslist << genre
+    end
+  end
+  uniquegenreslist
+
 end
 
 end
