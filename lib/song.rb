@@ -4,9 +4,13 @@ attr_accessor :name :artist :genre
 @@artists = []
 @@genres = []
 
-def initialize
-  #no parameters because name artist genre are all optoinal
+def initialize(name, artist, genre)
+  @name = name
+  @artist = artist
+  @genre = genre
+  #these three can be re-assign with the attraccessor methods
   @@count += 1
+  @@artists << @artist
 end
 
 def count
@@ -14,7 +18,13 @@ def count
 end
 
 def artists
-  @@artists
+  uniqueartistslist = []
+  @@artists.each do | artist |
+    if !uniqueartistslist.include?(artist) #aka if doesn't include already
+      uniqueartistslist << artist
+    end      
+  end
+  uniqueartistslist
 end
 
 def genres
