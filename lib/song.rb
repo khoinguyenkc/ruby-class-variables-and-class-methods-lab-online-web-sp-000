@@ -40,7 +40,6 @@ def self.genres #CLASS method
 end
 
 def self.genre_count
-
  tally = {}
  @@genres.each do | genre |
    if !tally.keys.include?(genre)
@@ -50,6 +49,18 @@ def self.genre_count
    end
  end
  tally
+end
+
+def self.artist_count
+  tally = {}
+  @@artists.each do | artist |
+    if !tally.keys.include?(artist)
+      tally[artist] = 1
+    else
+      tally[artist] += 1 
+    end
+  end
+  tally
 end
 
 
