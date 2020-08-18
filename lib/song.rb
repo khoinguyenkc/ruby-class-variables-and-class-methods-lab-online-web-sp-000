@@ -11,6 +11,7 @@ def initialize(name, artist, genre)
   #these three can be re-assign with the attraccessor methods
   @@count += 1
   @@artists << @artist
+  @@genres << @genre
 end
 
 def count
