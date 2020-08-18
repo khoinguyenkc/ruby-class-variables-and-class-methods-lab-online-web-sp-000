@@ -57,7 +57,7 @@ def self.artist_count #CLASS method
     if !tally.keys.include?(artist)
       tally[artist] = 1
     else
-      tally[artist] += 1 
+      tally[artist] += 1
     end
   end
   tally
