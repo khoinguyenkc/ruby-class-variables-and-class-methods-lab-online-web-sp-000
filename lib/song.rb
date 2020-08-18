@@ -44,7 +44,7 @@ def self.genre_count
  tally = {}
  @@genres.each do | genre |
    if !tally.keys.include?(genre)
-     tally[genre] => 1 #create genre. set to 1 ex: tally["rap"] = 1
+     tally[genre] = 1 #create genre. set to 1 ex: tally["rap"] = 1
    else
      tally[genre] += 1 #add 1
    end
