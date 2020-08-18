@@ -22,7 +22,7 @@ def artists
   @@artists.each do | artist |
     if !uniqueartistslist.include?(artist) #aka if doesn't include already
       uniqueartistslist << artist
-    end      
+    end
   end
   uniqueartistslist
 end
