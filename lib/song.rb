@@ -27,6 +27,7 @@ def artists
   uniqueartistslist
 end
 
+
 def genres
   uniquegenreslist = []
   @@genres.each do | genre |
@@ -35,7 +36,9 @@ def genres
     end
   end
   uniquegenreslist
-
 end
+
+
+
 
 end
