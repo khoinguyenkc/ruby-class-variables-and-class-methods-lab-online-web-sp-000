@@ -14,11 +14,11 @@ def initialize(name, artist, genre)
   @@genres << @genre
 end
 
-def count
+def self.count #CLASS method
   @@count #can't use attr.. because these are not regular instnace variables
 end
 
-def artists
+def self.artists #CLASS method
   uniqueartistslist = []
   @@artists.each do | artist |
     if !uniqueartistslist.include?(artist) #aka if doesn't include already
@@ -29,7 +29,7 @@ def artists
 end
 
 
-def genres
+def self.genres #CLASS method
   uniquegenreslist = []
   @@genres.each do | genre |
     if !uniquegenreslist.include?(genre) #aka if doesn't include already
